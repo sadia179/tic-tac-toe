@@ -95,6 +95,7 @@ const setComputerTurn=()=>{
       randomNum=state[1];
     }
   });
+  
   addAudio(playingClickAudio);
   const randomBoxId="box"+`${randomNum}`;
   const randomBox=document.getElementById(randomBoxId);
