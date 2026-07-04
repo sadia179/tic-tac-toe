@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="icons-section">
+      <img id="sound-icon" src="icons/volume-up.png">
+      <div id="home-icon"></div>
+    </div>
+
+    <div id="mode">
+      <h1>Play with</h1>
+      <button id="play-with-computer-btn"><p>Computer</p> <img alt="computer icon" src="icons/computer.png"></button>
+      <button  id="play-with-friend-btn"><p>Friend</p> <img alt="friend icon" src="icons/add-friend.png"></button>
+    </div>
+
+   <main hidden><div id="overlay" hidden></div>
+    <div id="players-container">
+      <div id="player" class="select"><div>Player X</div> <span id="first-player-score">_</span></div>
+      <div id="second-player"><div id="second-player-name"></div> <span id="second-player-score">_</span></div>
+    </div>
+    <div class="game-container">
+      <div id="box0"></div>
+      <div id="box1"></div>
+      <div id="box2"></div>
+      <div id="box3"></div>
+      <div id="box4"></div>
+      <div id="box5"></div>
+      <div id="box6"></div>
+      <div id="box7"></div>
+      <div id="box8"></div>
+    </div>
+    <div id="reset-btn-container"><button id="reset-btn">Reset Game</button></div>
+    <div id="winning-msg-modal" hidden>
+       <div id="close-btn-container"><button id="close-btn">x</button></div>
+       <div id="emoji-container"><img id="emoji"></div>
+       <div id="winning-msg"></div>
+       <div id="play-again-btn-container"><button id="play-again-btn"><p>Play again</p> <img alt="retry icon" src="icons/reload.png"></button></div>
+    </div>
+   </main>
+
+  </body>
+
+  <script src="script.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
