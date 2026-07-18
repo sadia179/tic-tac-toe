@@ -153,7 +153,7 @@ if(!gameOver&&leftOverTurns.length===0){
       gameOver=true;
 
       gameDrawSound.currentTime = 0;
-      gameDrawSound.play();
+      addAudio(gameDrawSound);    
       setTimeout(() => {
         gameDrawSound.pause();
       }, 1500); 
@@ -265,8 +265,8 @@ playAgainBtn.addEventListener("click",()=>{
 
 
 soundIcon.addEventListener("click",()=>{
-  addAudio(clickAudio);
   isMute=isMute?false:true;
+  addAudio(clickAudio);
   if (!isMute) {
     soundIcon.src = "icons/volume-up.png";
   } else {
@@ -292,7 +292,7 @@ homeIcon.addEventListener("click",()=>{
 
 const addAudio=audio=>{
   if(isMute) return;
-  audio.currentTime = 0;
+  audio.currentTime = 0;  
   audio.play();
 }
 
